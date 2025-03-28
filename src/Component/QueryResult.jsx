@@ -71,7 +71,7 @@ const QueryResult = () => {
 
   return (
     <motion.div
-    style={{height: "50vh"}}
+      style={{ height: "50vh" }}
       initial={{ opacity: 0, scale: 0.9 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}
@@ -87,13 +87,14 @@ const QueryResult = () => {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
+            cursor: "pointer",
           }}
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
         >
           <p>{result.query}</p>
-          <div >
+          <div>
             <SelectedChart data={data} options={options} />
           </div>
         </motion.div>

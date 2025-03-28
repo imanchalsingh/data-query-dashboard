@@ -42,6 +42,7 @@ const QueryHistory = () => {
                   justifyContent: "center",
                   paddingBottom: "20px",
                   alignItems: "center",
+                  cursor: "pointer",
                 }}
               >
                 <motion.li

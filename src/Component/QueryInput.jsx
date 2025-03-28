@@ -68,6 +68,7 @@ const QueryInput = () => {
               border: "#cc2900 2px solid ",
               paddingLeft: "10px",
               margin: "20px",
+              cursor: "pointer",
             }}
             type="text"
             value={query}
@@ -83,6 +84,7 @@ const QueryInput = () => {
               textDecoration: "none",
               color: "white",
               border: "#b32400 2px solid",
+              cursor: "pointer",
             }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -95,6 +97,7 @@ const QueryInput = () => {
               textAlign: "left",
               display: "flex",
               justifyContent: "center",
+              cursor: "pointer",
             }}
           >
             {filteredSuggestions.length > 0 && (

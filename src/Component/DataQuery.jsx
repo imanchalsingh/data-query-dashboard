@@ -38,7 +38,7 @@ const DataQuery = () => {
               "inset 4px 4px 10px rgba(0, 0, 0, 0.2), inset -4px -4px 10px rgba(100, 99, 99, 0.3)",
             display: "flex",
             flexDirection: "column", // To make sure content flows vertically
-            overflow:"hidden"
+            overflow: "hidden",
           }}
         >
           <QueryInput />
@@ -54,6 +54,7 @@ const DataQuery = () => {
                   textDecoration: "none",
                   color: "white",
                   border: "#000d1a 2px solid",
+                  cursor: "pointer",
                 }}
                 onClick={() => setActiveTab("result")}
                 initial={{ opacity: 0, x: -20 }}
@@ -71,6 +72,7 @@ const DataQuery = () => {
                   textDecoration: "none",
                   color: "white",
                   border: "#000d1a 2px solid",
+                  cursor: "pointer",
                 }}
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -85,8 +87,8 @@ const DataQuery = () => {
               style={{
                 overflowY: "auto",
                 marginTop: "20px",
-                height:"70vh",
-                padding:"20px"
+                height: "70vh",
+                padding: "20px",
               }}
             >
               {activeTab === "result" ? <QueryResult /> : <QueryHistory />}
