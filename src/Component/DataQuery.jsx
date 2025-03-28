@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import QueryInput from "./QueryInput";
 import QueryResult from "./QueryResult";
 import QueryHistory from "./QueryHistory";
-// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
 const DataQuery = () => {
@@ -32,12 +31,12 @@ const DataQuery = () => {
           style={{
             backgroundColor: "#ffffcc",
             width: "100%",
-            height: "95%", // Updated height to use entire available space
+            height: "95%",
             borderRadius: "10px",
             boxShadow:
               "inset 4px 4px 10px rgba(0, 0, 0, 0.2), inset -4px -4px 10px rgba(100, 99, 99, 0.3)",
             display: "flex",
-            flexDirection: "column", // To make sure content flows vertically
+            flexDirection: "column",
             overflow: "hidden",
           }}
         >
@@ -87,7 +86,7 @@ const DataQuery = () => {
               style={{
                 overflowY: "auto",
                 marginTop: "20px",
-                height: "70vh",
+                height: "60vh",
                 padding: "20px",
               }}
             >

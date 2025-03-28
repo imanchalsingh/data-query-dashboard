@@ -32,8 +32,13 @@ const querySlice = createSlice({
       state.loading = false;
       state.error = action.payload;
     },
+    deleteQuery: (state, action) => {
+      state.queries.splice(action.payload, 1);
+      saveToLocalStorage(state.queries);
+    },
   },
 });
 
-export const { submitQuery, querySuccess, queryFailure } = querySlice.actions;
+export const { submitQuery, querySuccess, queryFailure, deleteQuery } =
+  querySlice.actions;
 export default querySlice.reducer;

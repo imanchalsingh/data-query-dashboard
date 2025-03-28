@@ -84,17 +84,28 @@ const QueryResult = () => {
       {!loading && result && (
         <motion.div
           style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            cursor: "pointer",
+            position: "relative",
+            width: "350px",
+            margin: "20px auto",
+            padding: "10px",
+            borderRadius: "10px",
+            boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
+            background: "#fff",
           }}
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
         >
           <p>{result.query}</p>
-          <div>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              width: "300px",
+              height: "200px",
+            }}
+          >
             <SelectedChart data={data} options={options} />
           </div>
         </motion.div>
