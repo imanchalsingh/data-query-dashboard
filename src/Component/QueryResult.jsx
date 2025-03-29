@@ -77,9 +77,7 @@ const QueryResult = () => {
       transition={{ duration: 0.5 }}
     >
       <h2>Query Result</h2>
-      {loading && (
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} />
-      )}
+      {loading && <p>Loading...</p>}
       {error && <p>{error}</p>}
       {!loading && result && (
         <motion.div
@@ -106,7 +104,7 @@ const QueryResult = () => {
               height: "200px",
             }}
           >
-            <SelectedChart data={data} options={options} />
+            {loading ? <p>Loading...</p> : <SelectedChart data={data} options={options} />}
           </div>
         </motion.div>
       )}
