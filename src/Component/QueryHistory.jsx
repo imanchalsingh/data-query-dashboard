@@ -26,10 +26,10 @@ const QueryHistory = () => {
           {queries.map((queryObj, index) => {
             const data = {
               labels: queryObj.result?.labels || [
-                "Metric A",
-                "Metric B",
-                "Metric C",
-                "Metric D",
+                "M(A)",
+                "M(B)",
+                "M(C)",
+                "M(D)",
               ],
               datasets: [
                 {
@@ -93,7 +93,7 @@ const QueryHistory = () => {
                     position: "absolute",
                     top: "-25px",
                     right: "-10px",
-                    fontWeight:"bold"
+                    fontWeight: "bold",
                   }}
                 >
                   x
