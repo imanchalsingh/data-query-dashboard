@@ -44,7 +44,7 @@ npm start
 4. **The query is stored in history** for future use.  
 
 ## Project Link
-[GitHub repo](URL)
+[GitHub repo](https://github.com/imanchalsingh/data-query-dashboard)
 [Live Deployment](https://data-query-dashboard-gilt.vercel.app/)
 
 ## Learnings & Challenges  
