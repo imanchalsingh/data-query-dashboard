@@ -45,7 +45,7 @@ npm start
 
 ## Project Link
 [GitHub repo](URL)
-[Live Deployment](URL)
+[Live Deployment](https://data-query-dashboard-gilt.vercel.app/)
 
 ## Learnings & Challenges  
 - **Implemented Redux** for global state management.  
