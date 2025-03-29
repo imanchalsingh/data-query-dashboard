@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from "react-redux";
-import { Bar } from "react-chartjs-2";
+import { Line } from "react-chartjs-2";
 import { motion } from "framer-motion";
 import { deleteQuery } from "../redux/querySlice";
 import { IconButton } from "@mui/material";
@@ -22,7 +22,15 @@ const QueryHistory = () => {
       {queries.length === 0 ? (
         <p style={{ textAlign: "center" }}>No recent queries.</p>
       ) : (
-        <ul style={{ padding: 0 }}>
+        <ul
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "center",
+            gap: "20px",
+            padding: 0,
+          }}
+        >
           {queries.map((queryObj, index) => {
             const data = {
               labels: queryObj.result?.labels || [
@@ -34,7 +42,7 @@ const QueryHistory = () => {
               datasets: [
                 {
                   label: "Query Insights",
-                  data: queryObj.result?.data || [12, 19, 7, 15],
+                  data: queryObj.result?.data || [12, 10, 7, 15],
                   backgroundColor: ["#3498db", "#e74c3c", "#2ecc71", "#f1c40f"],
                 },
               ],
@@ -55,12 +63,14 @@ const QueryHistory = () => {
                 key={index}
                 style={{
                   position: "relative",
-                  width: "350px",
-                  margin: "20px auto",
+                  width: "300px",
                   padding: "10px",
                   borderRadius: "10px",
                   boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
                   background: "#fff",
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
                 }}
               >
                 <motion.li
@@ -70,6 +80,7 @@ const QueryHistory = () => {
                   style={{
                     listStyle: "none",
                     textAlign: "center",
+                    width: "100%",
                   }}
                 >
                   <p>{queryObj.query}</p>
@@ -78,11 +89,11 @@ const QueryHistory = () => {
                       display: "flex",
                       justifyContent: "center",
                       alignItems: "center",
-                      width: "300px",
+                      width: "100%",
                       height: "200px",
                     }}
                   >
-                    <Bar data={data} options={options} />
+                    <Line data={data} options={options} />
                   </div>
                 </motion.li>
 

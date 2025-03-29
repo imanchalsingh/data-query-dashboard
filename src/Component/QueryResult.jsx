@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { Bar } from "react-chartjs-2";
+import { Line } from "react-chartjs-2";
 import { motion } from "framer-motion";
 import {
   Chart as ChartJS,
@@ -28,7 +28,7 @@ ChartJS.register(
   Legend
 );
 
-const chartTypes = [Bar];
+const chartTypes = [Line];
 
 const generateRandomData = () => {
   return Array.from({ length: 4 }, () => Math.floor(Math.random() * 20) + 1);
@@ -83,7 +83,7 @@ const QueryResult = () => {
         <motion.div
           style={{
             position: "relative",
-            width: "350px",
+            width: "300px",
             margin: "20px auto",
             padding: "10px",
             borderRadius: "10px",
@@ -104,7 +104,11 @@ const QueryResult = () => {
               height: "200px",
             }}
           >
-            {loading ? <p>Loading...</p> : <SelectedChart data={data} options={options} />}
+            {loading ? (
+              <p>Loading...</p>
+            ) : (
+              <SelectedChart data={data} options={options} />
+            )}
           </div>
         </motion.div>
       )}

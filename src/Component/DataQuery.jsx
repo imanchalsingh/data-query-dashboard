@@ -86,7 +86,7 @@ const DataQuery = () => {
               style={{
                 overflowY: "auto",
                 marginTop: "20px",
-                height: "60vh",
+                height: "57vh",
                 padding: "20px",
               }}
             >
