@@ -40,7 +40,7 @@ const QueryResult = () => {
   const SelectedChart = chartTypes[randomChartIndex];
 
   const data = {
-    labels: ["Metric A", "Metric B", "Metric C", "Metric D"],
+    labels: ["M(A)", "M(B)", "M(C)", "M(D)"],
     datasets: [
       {
         label: "Query Insights",
