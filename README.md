@@ -13,10 +13,10 @@ The goal is to **simplify data analysis** for non-technical teams, eliminating t
 - **Loading & Error States** – Handles different query scenarios gracefully.  
 
 ## Tech Stack  
-- **Frontend:** React.js, Redux, Tailwind CSS  
+- **Frontend:** React.js, Redux.
 - **State Management:** Redux  
-- **Charting Library:** Chart.js / Recharts  
-- **Deployment:** Vercel / Netlify  
+- **Charting Library:** Chart.js
+- **Deployment:** Vercel 
 
 ## Installation & Setup  
 
@@ -46,8 +46,8 @@ npm start
 
 ## Learnings & Challenges  
 - **Implemented Redux** for global state management.  
-- **Integrated Chart.js / Recharts** for data visualization.  
-- **Ensured responsive & clean UI** using Tailwind CSS.  
+- **Integrated Chart.js** for data visualization.  
+- **Ensured responsive & clean UI** using CSS.  
 - **Simulated an AI query response system** without a backend.  
 
 ## Contact me
