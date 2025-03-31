@@ -18,9 +18,6 @@ The goal is to **simplify data analysis** for non-technical teams, eliminating t
 - **Charting Library:** Chart.js / Recharts  
 - **Deployment:** Vercel / Netlify  
 
-## UI Preview  
-_(Add Screenshots of your project here.)_  
-
 ## Installation & Setup  
 
 ### Create App
